@@ -25,7 +25,8 @@
   <title>RothBodyWork | Medical Massage Therapy in California — Courtney Roth</title>
 
   <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="assets/hero-bg.jpg" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
@@ -177,37 +178,60 @@
 
   <main id="main">
 
-    <!-- Hero with image + canvas background -->
+    <!-- Hero — full canvas background -->
     <section class="hero" id="hero" aria-label="Introduction">
-      <img src="assets/hero-bg.jpg" alt="" class="hero__bg-image" aria-hidden="true" fetchpriority="high">
       <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
       <div class="hero__overlay"></div>
       <div class="container hero__content">
-        <p class="hero__eyebrow">California · Medical Massage</p>
-        <h1>Healing massage for pain, mobility &amp; lasting relief</h1>
-        <p class="hero__lead">Courtney Roth brings 34 years of hands-on expertise to every session — deep tissue, ART, and Thai techniques tailored to your body.</p>
-        <div class="hero__actions">
-          <a href="#pay" class="btn btn--primary">Pay for a Session</a>
+        <div class="hero__badge-row reveal">
+          <span class="hero__pill">California Licensed</span>
+          <span class="hero__pill">34 Years Experience</span>
+          <span class="hero__pill">Medical Massage</span>
+        </div>
+        <p class="hero__eyebrow reveal reveal--delay-1">Pain Relief · Mobility · Lasting Results</p>
+        <h1 class="reveal reveal--delay-2">Healing massage tailored to <em>your</em> body</h1>
+        <p class="hero__lead reveal reveal--delay-3">Courtney Roth combines deep tissue, ART, and Thai techniques into every session — collaborative care for pain, injury recovery, and structural balance.</p>
+        <div class="hero__actions reveal reveal--delay-4">
+          <a href="#pay" class="btn btn--primary btn--glow">
+            <span>Pay for a Session</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
           <a href="#contact" class="btn btn--ghost">Email to Get Started</a>
         </div>
+        <div class="hero__stats reveal reveal--delay-5">
+          <div class="hero__stat">
+            <strong>$165</strong>
+            <span>75 min session</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <strong>$180</strong>
+            <span>90 min session</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <strong>Email only</strong>
+            <span>No phone calls</span>
+          </div>
+        </div>
       </div>
-      <div class="hero__scroll" aria-hidden="true">
+      <a href="#about" class="hero__scroll" aria-label="Scroll to learn more">
         <span></span>
-      </div>
+      </a>
     </section>
 
     <!-- About -->
     <section class="section section--about" id="about">
       <div class="container">
         <div class="section__grid section__grid--media">
-          <div class="section__media">
+          <div class="section__media reveal">
             <img src="assets/courtney-roth.png" alt="Courtney Roth — California licensed medical massage therapist" width="600" height="415" loading="lazy">
           </div>
-          <div class="section__label">
+          <div class="section__label reveal">
             <span class="eyebrow">About</span>
             <h2>Who is Courtney Roth?</h2>
           </div>
-          <div class="section__body">
+          <div class="section__body reveal">
             <p class="lead">Courtney Roth is a California-licensed massage therapist who specializes in <strong>medical massage</strong> — working with people who have pain, structural imbalances, and soft tissue injuries.</p>
             <p>She combines deep tissue massage, Active Release Therapy (ART), Thai massage, and stress-relief techniques to reduce pain and restore flexibility. With 34 years of experience, Courtney uses intuition and technical skill to deliver results that last.</p>
             <p>Every session is collaborative: you set the goal, she builds the treatment. Clients leave with greater mobility, comfort, and value for their investment in their health.</p>
@@ -219,13 +243,13 @@
     <!-- Services & Pricing -->
     <section class="section section--services" id="services">
       <div class="container">
-        <div class="section__header section__header--center">
+        <div class="section__header section__header--center reveal">
           <span class="eyebrow">Services</span>
           <h2>What does a session include?</h2>
           <p class="section__intro">Together we decide how to spend your time for the highest value. Modalities are chosen based on what you share at the start of each visit.</p>
         </div>
 
-        <div class="treatment-card treatment-card--with-image">
+        <div class="treatment-card treatment-card--with-image reveal">
           <div class="treatment-card__image">
             <img src="assets/massage.png" alt="Custom medical massage treatment session" width="480" height="720" loading="lazy">
           </div>
@@ -236,13 +260,13 @@
         </div>
 
         <div class="pricing-grid">
-          <article class="price-card">
+          <article class="price-card reveal">
             <div class="price-card__time">75 minutes</div>
             <div class="price-card__amount">$165</div>
             <p>Focused treatment for targeted pain and tension relief.</p>
             <a href="#pay" class="btn btn--outline" data-session="75">Pay — 75 min</a>
           </article>
-          <article class="price-card price-card--featured">
+          <article class="price-card price-card--featured reveal">
             <div class="price-card__badge">Most popular</div>
             <div class="price-card__time">90 minutes</div>
             <div class="price-card__amount">$180</div>
@@ -258,12 +282,12 @@
     <!-- Benefits -->
     <section class="section section--benefits" id="benefits">
       <div class="container">
-        <div class="section__header section__header--center">
+        <div class="section__header section__header--center reveal">
           <span class="eyebrow">Benefits</span>
           <h2>Why choose medical massage?</h2>
         </div>
         <div class="benefits-grid">
-          <article class="benefit-card benefit-card--image">
+          <article class="benefit-card benefit-card--image reveal">
             <div class="benefit-card__photo">
               <img src="assets/back-massage.jpg" alt="Deep tissue back massage relieving muscle tension" width="400" height="267" loading="lazy">
             </div>
@@ -272,7 +296,7 @@
               <p>Targets knots, adhesions, and muscular imbalances while improving circulation so muscles release and pain eases.</p>
             </div>
           </article>
-          <article class="benefit-card benefit-card--image">
+          <article class="benefit-card benefit-card--image reveal">
             <div class="benefit-card__photo">
               <img src="assets/face-massage.jpg" alt="Therapeutic massage improving relaxation and mobility" width="400" height="600" loading="lazy">
             </div>
@@ -281,7 +305,7 @@
               <p>Works soft tissues to restore mobility — especially helpful after injury, chronic conditions, or sedentary habits.</p>
             </div>
           </article>
-          <article class="benefit-card benefit-card--image">
+          <article class="benefit-card benefit-card--image reveal">
             <div class="benefit-card__photo">
               <img src="assets/feet-massage.jpg" alt="Relaxing foot massage reducing stress and anxiety" width="400" height="553" loading="lazy">
             </div>
@@ -297,32 +321,32 @@
     <!-- FAQ — optimized for AI extraction -->
     <section class="section section--faq" id="faq">
       <div class="container">
-        <div class="section__header section__header--center">
+        <div class="section__header section__header--center reveal">
           <span class="eyebrow">FAQ</span>
           <h2>Common questions</h2>
         </div>
-        <dl class="faq-list">
-          <div class="faq-item">
-            <dt>Who is Courtney Roth?</dt>
-            <dd>A California-licensed massage therapist with 34 years of experience, specializing in medical massage for pain, injury, and structural balance.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>What techniques are used?</dt>
-            <dd>Deep tissue, Active Release Therapy (ART), Thai massage, trigger point work, and optional hot towels and aromatherapy — customized each session.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>How much does a session cost?</dt>
-            <dd>75 minutes: $165. 90 minutes: $180. Pay securely online after arranging your visit by email.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>Can I schedule online?</dt>
-            <dd>No — online booking is not available. Email Courtney to set up your appointment, then use the payment buttons on this page.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>Is phone contact required?</dt>
-            <dd>No. All communication is handled by email. Courtney does not take phone calls.</dd>
-          </div>
-        </dl>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Who is Courtney Roth?</summary>
+            <p>A California-licensed massage therapist with 34 years of experience, specializing in medical massage for pain, injury, and structural balance.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>What techniques are used?</summary>
+            <p>Deep tissue, Active Release Therapy (ART), Thai massage, trigger point work, and optional hot towels and aromatherapy — customized each session.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How much does a session cost?</summary>
+            <p>75 minutes: $165. 90 minutes: $180. Pay securely online after arranging your visit by email.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can I schedule online?</summary>
+            <p>No — online booking is not available. Email Courtney to set up your appointment, then use the payment buttons on this page.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is phone contact required?</summary>
+            <p>No. All communication is handled by email. Courtney does not take phone calls.</p>
+          </details>
+        </div>
       </div>
     </section>
 
@@ -361,7 +385,7 @@
             <h2>Get started by email</h2>
             <p class="contact-note">No phone calls — email is the best way to reach Courtney.</p>
           </div>
-          <div class="section__body">
+          <div class="section__body reveal">
             <form class="contact-form" id="contactForm" action="mailto:hello@rothbodywork.com" method="post" enctype="text/plain">
               <div class="form-row">
                 <label for="name">Your name</label>
