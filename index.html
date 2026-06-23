@@ -24,7 +24,7 @@
 
   <title>RothBodyWork | Medical Massage Therapy in California — Courtney Roth</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -83,6 +83,7 @@
         "@id": "https://www.rothbodywork.com/#courtney",
         "name": "Courtney Roth",
         "jobTitle": "Licensed Massage Therapist",
+        "image": "https://www.rothbodywork.com/assets/courtney-roth.png",
         "description": "California-licensed massage therapist with 34 years of experience in medical massage, deep tissue, Active Release Therapy (ART), and Thai massage.",
         "knowsAbout": ["Medical massage", "Deep tissue massage", "Active Release Therapy", "Thai massage", "Pain management", "Soft tissue rehabilitation"],
         "worksFor": { "@id": "https://www.rothbodywork.com/#business" }
@@ -156,7 +157,7 @@
   <header class="site-header" id="header">
     <div class="container site-header__inner">
       <a href="#" class="logo" aria-label="RothBodyWork home">
-        Roth<span>BodyWork</span>
+        <img src="assets/logo.png" alt="RothBodyWork" width="160" height="48" class="logo__img">
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -200,7 +201,7 @@
       <div class="container">
         <div class="section__grid section__grid--media">
           <div class="section__media">
-            <img src="assets/about-massage.jpg" alt="Therapeutic medical massage session by Courtney Roth" width="600" height="400" loading="lazy">
+            <img src="assets/courtney-roth.png" alt="Courtney Roth — California licensed medical massage therapist" width="600" height="415" loading="lazy">
           </div>
           <div class="section__label">
             <span class="eyebrow">About</span>
@@ -226,7 +227,7 @@
 
         <div class="treatment-card treatment-card--with-image">
           <div class="treatment-card__image">
-            <img src="assets/treatment-detail.jpg" alt="Spa treatment add-ons — hot towels and aromatherapy" width="480" height="320" loading="lazy">
+            <img src="assets/massage.png" alt="Custom medical massage treatment session" width="480" height="720" loading="lazy">
           </div>
           <div class="treatment-card__text">
             <h3>Custom Medical Massage</h3>
@@ -262,20 +263,32 @@
           <h2>Why choose medical massage?</h2>
         </div>
         <div class="benefits-grid">
-          <article class="benefit-card">
-            <div class="benefit-card__icon" aria-hidden="true">01</div>
-            <h3>Relieves muscle tension &amp; pain</h3>
-            <p>Targets knots, adhesions, and muscular imbalances while improving circulation so muscles release and pain eases.</p>
+          <article class="benefit-card benefit-card--image">
+            <div class="benefit-card__photo">
+              <img src="assets/back-massage.jpg" alt="Deep tissue back massage relieving muscle tension" width="400" height="267" loading="lazy">
+            </div>
+            <div class="benefit-card__content">
+              <h3>Relieves muscle tension &amp; pain</h3>
+              <p>Targets knots, adhesions, and muscular imbalances while improving circulation so muscles release and pain eases.</p>
+            </div>
           </article>
-          <article class="benefit-card">
-            <div class="benefit-card__icon" aria-hidden="true">02</div>
-            <h3>Improves flexibility &amp; range of motion</h3>
-            <p>Works soft tissues to restore mobility — especially helpful after injury, chronic conditions, or sedentary habits.</p>
+          <article class="benefit-card benefit-card--image">
+            <div class="benefit-card__photo">
+              <img src="assets/face-massage.jpg" alt="Therapeutic massage improving relaxation and mobility" width="400" height="600" loading="lazy">
+            </div>
+            <div class="benefit-card__content">
+              <h3>Improves flexibility &amp; range of motion</h3>
+              <p>Works soft tissues to restore mobility — especially helpful after injury, chronic conditions, or sedentary habits.</p>
+            </div>
           </article>
-          <article class="benefit-card">
-            <div class="benefit-card__icon" aria-hidden="true">03</div>
-            <h3>Reduces stress &amp; anxiety</h3>
-            <p>Calms the nervous system and stimulates endorphin release, leaving you relaxed and rejuvenated.</p>
+          <article class="benefit-card benefit-card--image">
+            <div class="benefit-card__photo">
+              <img src="assets/feet-massage.jpg" alt="Relaxing foot massage reducing stress and anxiety" width="400" height="553" loading="lazy">
+            </div>
+            <div class="benefit-card__content">
+              <h3>Reduces stress &amp; anxiety</h3>
+              <p>Calms the nervous system and stimulates endorphin release, leaving you relaxed and rejuvenated.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -315,6 +328,9 @@
 
     <!-- Payment -->
     <section class="section section--pay" id="pay">
+      <div class="pay-section-bg" aria-hidden="true">
+        <img src="assets/spa-bg.jpg" alt="" loading="lazy">
+      </div>
       <div class="container">
         <div class="pay-panel">
           <div class="pay-panel__content">
@@ -378,7 +394,9 @@
 
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <p class="footer-brand">Roth<span>BodyWork</span></p>
+      <p class="footer-brand">
+        <img src="assets/logo-white.png" alt="RothBodyWork" width="140" height="42" class="footer-brand__img">
+      </p>
       <p class="footer-copy">&copy; <span id="year"></span> Courtney Roth · California Licensed Massage Therapist</p>
       <nav aria-label="Footer navigation">
         <a href="#pay">Pay Online</a>
